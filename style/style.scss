@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+%BluelineStyle{
+    border-radius: 30px;
+    height: 2px;
+    width: 49%;
+    background-color: rgb(0, 0, 255);
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/hgf.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    .headerBg{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.80;
+    }
+    .headHeader{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    // border: 1px solid red;
+   
+    &-left{
+        float: left;
+        padding: 50px;
+        color: white;
+        font-family: 'Lucida Console';
+        .logo{
+            display: inline-block;
+        }
+        .logoText{
+            display: inline-block;
+            font-size: 12px;
+        }
+
+    }
+    &-right{
+        float: right;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding:50px;
+        margin-top: 5px;
+        a{
+           position: relative;
+           cursor: pointer;
+           text-decoration: none;
+           nav{
+             position: relative;
+             color: white;
+             margin: 0px 10px;
+              .BlueLine{
+                display: none;
+               width: 100%;
+               position: absolute;
+               top: 30px;
+
+                .BlueLineLeft{
+                 @extend %BluelineStyle;
+                 float: left;
+                }
+                .BlueLineRight{
+                 @extend %BluelineStyle;
+                 float: right;
+                }
+               }
+               
+            } 
+           
+        }
+        
+    }
+
+
+
+
+    }
+    
+}

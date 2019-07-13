@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <div class="headerBg"></div>
+      <div class="headHeader">
+        <div class="headHeader-left">
+           <div class="logo"><h1>LUCID</h1></div>
+           <div class="logoText"><p>ONEPAGE<br>THEME</p></div>
+        </div>
+        <div id="nav">
+          <div class="headHeader-right">
+            <newnav 
+            v-for="el in elems"
+            :key="el.id"
+            :post-titel="el.postTitel"
+            
+
+            ></newnav>
+            <!-- <newnav post-titel="Contact"></newnav>
+            <newnav post-titel="Pricing"></newnav>
+            <newnav post-titel="Testimonials"></newnav> 
+            <newnav post-titel="About"></newnav>
+            <newnav post-titel="Features"></newnav>  -->
+         </div>
+        </div>
+      </div>
+
+    </header>
+
+
+    <footer></footer>
+
+</body>
+</html>
