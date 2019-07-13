@@ -5,6 +5,7 @@
     
             props: {
                postTitel: '',
+               displayNav: ''
                
 
             },
@@ -25,7 +26,7 @@
 
                         resolve(this.display)
                     })
-                    console.log(this.display)
+                    console.log(nav.elems)
                     if(this.display == 'none'){
                         this.display = 'block';
                     }
@@ -65,14 +66,14 @@
             el: '#nav',
             data: {
                 elems:[
-                  {id:1,postTitel:'Home',display: ''},
-                  {id:2,postTitel:'Contact',display: ''},
-                  {id:3,postTitel:'Pricing',display: ''},
-                  {id:4,postTitel:'Testimonials',display: ''},
-                  {id:5,postTitel:'About',display: ''},
-                  {id:6,postTitel:'Features',display: ''},
+                  {id:1,postTitel:'Home',display: this.display},
+                  {id:2,postTitel:'Contact',display: this.display},
+                  {id:3,postTitel:'Pricing',display: this.display},
+                  {id:4,postTitel:'Testimonials',display: this.display},
+                  {id:5,postTitel:'About',display: this.display},
+                  {id:6,postTitel:'Features',display: this.display}
                 ] 
-                ,
+                
             },
             methods:{
               
